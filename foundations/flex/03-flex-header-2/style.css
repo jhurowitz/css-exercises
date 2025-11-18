@@ -12,7 +12,22 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.left-side, .right-side {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* First instint was correct with space-between */
+/* Header has 2 groups with space between, not a middle with higher growth rate */
+/* .middle-gap {
+  flex: 1 1 auto;
+} */
 
 .profile-image {
   background: rebeccapurple;
@@ -45,4 +60,8 @@ a {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
 }
